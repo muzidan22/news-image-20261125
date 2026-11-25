@@ -1,4 +1,4 @@
-"""Entry program for news-image-20261125 (v3).
+"""Entry program for news-image-20261125 (v4).
 
 Copies the pre-built 1024x1024 news image from assets/entry.png to
 the output directory as entry.png. Deterministic: the copy is
@@ -17,6 +17,7 @@ def main():
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
     os.makedirs(out_dir, exist_ok=True)
     dst = os.path.join(out_dir, "entry.png")
+    # v4: 49 stories, 15 drawn scenes, giant date masthead.
     # Deterministic: same input bytes -> same output bytes, every run.
     shutil.copyfile(src, dst)
 
