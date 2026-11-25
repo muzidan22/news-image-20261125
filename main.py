@@ -1,4 +1,4 @@
-"""Entry program for news-image-20261125 (v2).
+"""Entry program for news-image-20261125 (v3).
 
 Copies the pre-built 1024x1024 news image from assets/entry.png to
 the output directory as entry.png. Deterministic: the copy is
