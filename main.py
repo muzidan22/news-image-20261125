@@ -1,8 +1,9 @@
 """Entry program for news-image-20261125.
 
 Copies the pre-built 1024x1024 news image from assets/entry.png to
-the output directory as entry.png. Deterministic: the same input
-bytes are written on every run, with no network access.
+the output directory as entry.png. Deterministic: the copy is
+byte-identical on every run — no random input, no timestamps,
+no network access, standard library only.
 """
 
 import os
