@@ -10,6 +10,7 @@ import os
 import shutil
 
 
+# Entry point: python3 main.py (Python 3.13). No arguments, no network.
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     src = os.path.join(here, "assets", "entry.png")
