@@ -17,7 +17,8 @@ def main():
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
     os.makedirs(out_dir, exist_ok=True)
     dst = os.path.join(out_dir, "entry.png")
-    # v5: 50 stories, v3 layout + verified UTC timeline strip.
+    # v5 revised: 68 stories, v3 layout + verified UTC timeline strip,
+    # Natural Earth dotted map with 7 pins, 57-story brief in 3 columns.
     # Deterministic: same input bytes -> same output bytes, every run.
     shutil.copyfile(src, dst)
 
